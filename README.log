@@ -1,0 +1,121 @@
+This is TeX, Version 3.141592653 (TeX Live 2022/Debian) (preloaded format=tex 2024.6.27)  14 OCT 2024 15:22
+**README.tex
+(./README.tex
+! Undefined control sequence.
+l.3 \documentclass
+                  {article}
+? 
+! Undefined control sequence.
+l.4 \usepackage
+               [utf8]{inputenc}
+? 
+! Undefined control sequence.
+l.5 \usepackage
+               [T1]{fontenc}
+? 
+! Undefined control sequence.
+l.6 \usepackage
+               [magyar]{babel}
+? 
+! Undefined control sequence.
+l.7 \usepackage
+               {verbatim}
+? 
+! Undefined control sequence.
+l.9 \usepackage
+               {geometry}
+? 
+! Interruption.
+<to be read again> 
+                   {
+l.9 \usepackage{
+                geometry}
+? 
+! Undefined control sequence.
+l.10 \geometry
+              {left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm}
+? :q
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? q
+OK, entering \batchmode...
+
+Overfull \hbox (4.44049pt too wide) in paragraph at lines 3--11
+[]\tenrm article [utf8]inputenc [T1]fontenc [mag-yar]babel ver-ba-tim ge-om-e-t
+ry left=1.5cm, right=1.5cm, top=1.5cm,|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm a
+.\tenrm r
+.\tenrm t
+.\tenrm i
+.etc.
+
+! Undefined control sequence.
+l.13 \title
+           {README}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.14 \author
+            {F^^c3^^a1bi^^c3^^a1n Bern^^c3^^a1t}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ^^c3 in font cmr10!
+Missing character: There is no ^^a1 in font cmr10!
+Missing character: There is no ^^c3 in font cmr10!
+Missing character: There is no ^^a1 in font cmr10!
+Missing character: There is no ^^c3 in font cmr10!
+Missing character: There is no ^^a1 in font cmr10!
+! Undefined control sequence.
+l.15 \begin
+           {document}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ^^c3 in font cmr10!
+Missing character: There is no ^^ad in font cmr10!
+Missing character: There is no ^^c3 in font cmr10!
+Missing character: There is no ^^a9 in font cmr10!
+Missing character: There is no ^^c3 in font cmr10!
+Missing character: There is no ^^a9 in font cmr10!
+Missing character: There is no ^^c3 in font cmr10!
+Missing character: There is no ^^b3 in font cmr10!
+Missing character: There is no ^^c3 in font cmr10!
+Missing character: There is no ^^b6 in font cmr10!
+Missing character: There is no ^^c3 in font cmr10!
+Missing character: There is no ^^a1 in font cmr10!
+)
+Runaway argument?
+ data/database.csv \\\\ ^^e2^^80^^93 a f^^c3^^b6lhaszn^^c3^^a1lt \LaTeX \ETC.
+! File ended while scanning use of \\.
+<inserted text> 
+                \par 
+<*> README.tex
+              
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+! Emergency stop.
+<*> README.tex
+              
+*** (job aborted, no legal \end found)
+
+No pages of output.

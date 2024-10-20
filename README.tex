@@ -1,0 +1,48 @@
+% magyar LaTeX article sablon 
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[magyar]{babel}
+\usepackage{verbatim}
+% margók beállítása
+\usepackage{geometry} 
+\geometry{left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm}
+
+%opening
+\title{README}
+\author{Fábián Bernát}
+\begin{document}
+- a cím- és névadatokat tartalmazó szövegfájl:
+\\
+data/database.csv
+\\\\
+– a fölhasznált \LaTeX sablon:
+\\
+sample.tex
+\\\\
+– a körleveleket generáló szkriptek, programok:
+\\
+data/LetterGenerator.py, data/DataGenerator.py
+\\\\
+– a létrehozott, nyomtatásra kész (PDF) körlevelek:
+\\
+pdf\_outputs/*.pdf
+\\\\
+– a felhasznált \LaTeX csomagok, stílusfájlok (ha ezek közismertek,
+könnyen elérhetők, elég felsorolni és az elérhetőségüket megadni.):
+\begin{verbatim}
+\documentclass[a4paper,12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[magyar]{babel}
+\usepackage{graphicx}
+\usepackage{t1enc}
+% margók beállítása
+\usepackage{geometry} 
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\usepackage{fancyhdr} % Fancy header/footer
+\usepackage{enumerate}
+\usepackage{hyperref}
+\end{verbatim}
+\end{document}

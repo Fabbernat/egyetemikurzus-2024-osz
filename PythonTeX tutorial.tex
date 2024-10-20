@@ -1,0 +1,18 @@
+How to run PythonTeX code?
+
+**Compiling a document that uses PythonTEX involves three steps: run LATEX, run pythontex.py, and finally run LATEX again.
+You may wish to create a symlink or launching wrapper for pythontex.py, if one was not created during installation.**
+
+ - Generally, PythonTeX offers 7 inline commands to be used within nor-
+mal LaTeX running text:
+– \py Evaluates a Python expression and prints its value. Here
+also functions defined via pycode can be used.
+– \pyc Executes code, output goes to stdout, does not typeset it
+– \pyb Executes code, but outputs only the code prettyprinted.
+To show anything printed, use \printpythontex or \stdoutpythontex.
+– \pys Supports variable and expression substitution
+– \pyv Prettyprints code (nothing is executed).
+- Same as \pygment{python}
+- Other than the pyverbatim env no new paragraph is created.
+– \pygment General code typesetting
+– \pycon Accesses a variable from a previous pyconsole block

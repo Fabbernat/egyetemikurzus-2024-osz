@@ -1,0 +1,66 @@
+\documentclass[a4paper,12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[magyar]{babel}
+\usepackage{graphicx}
+\usepackage{t1enc}
+% margók beállítása
+\usepackage{geometry} 
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\usepackage{fancyhdr} % Fancy header/footer
+\usepackage{enumerate}
+\usepackage{hyperref}
+
+% Címzett és egyéb adatok külső fájlból
+\input{data/cimzett_adatok_bela}
+
+% Document starts here
+\begin{document}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Nemzeti Adó- és Vámhivatal}
+\fancyhead[R]{\today}
+\fancyfoot[C]{\thepage}
+
+
+% Manually add the subject and recipient details
+\begin{flushleft}
+    \textbf{Tárgy:} Fizetési felszólítás - Adótartozás \\ [1em] 
+    \textbf{Címzett:} \nev \\ [1em] 
+    \textbf{Cím:} \cim
+\end{flushleft}
+
+\vspace{1.5em}
+
+Tisztelt \nev!
+
+Ezúton értesítjük Önt, hogy a NAV nyilvántartásában szereplő adatok alapján Önnek fizetési hátraléka van, amelynek összege \osszeg HUF. Kérjük, hogy a tartozást legkésőbb \hatarido dátumig rendezze.
+
+Felhívjuk figyelmét, hogy amennyiben a megadott határidőig nem történik meg a fizetés, úgy jogi lépéseket teszünk a tartozás behajtása érdekében.
+
+Az utaláshoz szükséges adatok:
+\begin{itemize}
+    \item Számlaszám: 12345678-00000000-00000000
+    \item Közlemény: \kozlemeny
+\end{itemize}
+
+Amennyiben a tartozás rendezése megtörtént, kérdése merül fel, vagy részletfizetési kérelmet szeretne benyújtani, kérjük, vegye fel a kapcsolatot ügyfélszolgálatunkkal a következő telefonszámon: \\
++36 1 123 4567
+
+Köszönettel,\\
+Nemzeti Adó- és Vámhivatal Pénzügyi Osztály \\
+\signature{Nemzeti Adó- és Vámhivatal Pénzügyi Osztály}
+1134 Budapest, Dózsa György út 128-132. \\
+\address{NAV Központi Hivatal, 1134 Budapest, Dózsa György út 128-132. }
+ \href{mailto:ebpavig@nav.gov.hu}{ebpavig@nav.gov.hu} \\Levelezési cím:1387 Budapest, Pf.: 45. \\Telefonszám:+36 (1) 412-5400 \\Fax:+36 (1) 412-5551
+\date{\today}
+
+\vspace{1.5em}
+\textit{Kérjük, hogy az utalás során minden adatot pontosan adjon meg, különben nem tudjuk azonosítani a befizetést.}
+
+\vspace{1em}
+Melléklet: Fizetési felszólítás
+
+\end{document}
