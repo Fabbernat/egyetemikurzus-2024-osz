@@ -1,6 +1,6 @@
 using System;
 
-namespace KorlevelGenerator.source
+namespace URX5VP.models
 {
     public record Email
     {

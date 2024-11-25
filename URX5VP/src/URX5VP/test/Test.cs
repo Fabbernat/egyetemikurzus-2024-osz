@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Globalization;
 using Xunit;
 using URX5VP;
-namespace KorlevelGenerator.source.test
+namespace URX5VP.test
 {
     public class Test
     {

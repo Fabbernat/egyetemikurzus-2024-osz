@@ -1,5 +1,5 @@
 ﻿using Address;
-namespace DefaultNamespace;
+namespace URX5VP.models{
 
 public class PersonalData
 {
@@ -20,7 +20,6 @@ public class PersonalData
         Osszeg = osszeg;
         Hatarido = hatarido;
         Kozlemeny = kozlemeny;
-    }
-    
-    
+	}
+   } 
 }

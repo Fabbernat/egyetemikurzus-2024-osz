@@ -1,4 +1,4 @@
-﻿namespace DefaultNamespace;
+﻿namespace URX5VP.models{
 
 public class Address
 {
@@ -45,7 +45,6 @@ public class Address
         Reszleg = reszleg;
         Emelet = emelet;
         Ajto = ajto;
-    }
-
-        
+    	}   
+	}
 }
