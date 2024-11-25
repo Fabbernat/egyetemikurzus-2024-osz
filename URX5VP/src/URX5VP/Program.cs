@@ -6,6 +6,7 @@ using EmailGenerator;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace URX5VP
+
 {
     public class Program
     {
