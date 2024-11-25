@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="controllers\CSV\*.cs" />
+        <Compile Include="controllers\*.cs" />
+        <Compile Include="DAO\*.cs" />
+        <Compile Include="db\*.cs" />
+        <Compile Include="models\*.cs" />
+        <Compile Include="*.cs" />
+        <Compile Include="test\*.cs" />
+    </ItemGroup>
+
+</Project>

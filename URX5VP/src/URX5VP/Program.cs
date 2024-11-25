@@ -19,13 +19,14 @@ namespace URX5VP
                 var key = Console.ReadKey();
                 if (key == 'A')
                 {
-                    
+                    // TODO
                 } else if (key == 'C')
                 {
-                    
+                    // TODO
                 }
+                // maybe_unused
                 OnWriteType();
-                Console.WriteLine("Add meg a levélhat szükséges változókat!");
+                Console.WriteLine("Add meg a levélhez szükséges változókat!");
                 
             }
             }
