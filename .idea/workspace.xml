@@ -4,13 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57b536d1-03be-4928-8870-f4f36a22ace1" name="Changes" comment="" />
+    <list default="true" id="57b536d1-03be-4928-8870-f4f36a22ace1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/URX5VP/.git-push-tutorial.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/URX5VP/src/URX5VP/IOHandler/Commands.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/URX5VP/src/URX5VP/models/DefaultParts.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/URX5VP/src/URX5VP/EmailGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/URX5VP/src/URX5VP/EmailGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/URX5VP/src/URX5VP/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/URX5VP/src/URX5VP/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/URX5VP/src/hazifeladatok.sln" beforeDir="false" afterPath="$PROJECT_DIR$/URX5VP/src/hazifeladatok.sln" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -22,51 +37,60 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Fabbernat/egyetemikurzus-2024-osz&quot;,
+    &quot;url&quot;: &quot;https://github.com/Fabbernat/egyetemikurzus-2024-osz/&quot;,
     &quot;accountId&quot;: &quot;783944cf-0303-4583-9375-60bb1e3e24bd&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/URX5VP/Email.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/URX5VP/src/URX5VP/DataGenerator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/URX5VP/src/URX5VP/EmailGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/URX5VP/src/URX5VP/IOHandler/Commands.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/URX5VP/src/URX5VP/LINQOperations.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/URX5VP/src/URX5VP/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/URX5VP/src/URX5VP/models/Address.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/URX5VP/src/URX5VP/models/DefaultParts.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/URX5VP/src/URX5VP/models/Email.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/URX5VP/src/URX5VP/models/PersonalData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/URX5VP/src/URX5VP/models/PersonalData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/URX5VP/src/URX5VP/test/Test.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2pE3g5DdvqlGPNtDio6UxuhN1k9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Executable.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;&lt;unknown&gt;&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Executable.Unnamed.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "classify",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/egyetemikurzus-2024-osz",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: []
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": []
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Unnamed" type="RunExe" factoryName=".NET Executable" nameIsGenerated="true">
       <option name="EXE_PATH" value="$USER_HOME$/postgresql_16.exe" />
@@ -91,7 +115,27 @@
       <option name="presentableId" value="Default" />
       <updated>1732317516115</updated>
       <workItem from="1732317519228" duration="11924000" />
+      <workItem from="1732546630830" duration="3848000" />
+      <workItem from="1732558504905" duration="945000" />
+      <workItem from="1732620694880" duration="2411000" />
     </task>
+    <task id="LOCAL-00001" summary="11.25. 16:00 try">
+      <option name="closed" value="true" />
+      <created>1732547179703</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732547179703</updated>
+    </task>
+    <task id="LOCAL-00002" summary="deleted unnecessary files, fixed namespaces">
+      <option name="closed" value="true" />
+      <created>1732548193744</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732548193744</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,7 +148,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="classify" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -112,6 +168,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="11.25. 16:00 try" />
+    <MESSAGE value="deleted unnecessary files, fixed namespaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted unnecessary files, fixed namespaces" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

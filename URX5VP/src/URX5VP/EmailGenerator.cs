@@ -50,5 +50,61 @@ namespace URX5VP
                 return "";
             }
         }
+        
+        Email InitializeEmail()
+        {
+            Console.WriteLine("Adja meg az email-címét!");
+            string Sender = "";
+            do
+            {
+
+                Sender = Console.ReadLine();
+
+                if (string.IsNullOrWhiteSpace(Sender))
+                {
+                    Console.WriteLine("Hiba: Az email-címe nem lehet üres.");
+                    continue;
+                }
+                else if (!Sender.Contains('@'))
+                {
+                    Console.WriteLine("Hiba: Érvénytelen email cím.");
+                }
+                else
+                {
+                    break;
+                }
+            } while (string.IsNullOrWhiteSpace(Sender) || !Sender.Contains('@'));
+
+            string[] recipientsEncriptionMode = { "To", "Cc", "Bcc" };
+            foreach (var mode in recipientsEncriptionMode)
+            {
+                Console.WriteLine(
+                    $"Adja meg a {recipientsEncriptionMode} címzettek email címeit! Ha végzett, nyomja meg az Esc (escape) gombot!")
+            }
+
+            ;
+            String key = null;
+            int i = 0;
+            string[] emailAddresses = [];
+            do
+            {
+                ++i;
+                System.Console.WriteLine($"{i}. címzett email-címe:");
+                string emailAddress = Console.ReadLine();
+                emailAddresses.append(emailAddress);
+            } while (key != "Esc");
+
+
+
+            Console.WriteLine("Adja meg az email tárgyát! ");
+            string Subject = Console.ReadLine();
+
+            Console.WriteLine("Adja meg az üzenetet sztringként!");
+            string message = Console.ReadLine();
+
+            Email email = new Email(Sender, Recipients, Subject, DateTime.Now, message);
+            
+            return email;
+        }
     }
 }
