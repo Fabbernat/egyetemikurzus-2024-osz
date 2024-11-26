@@ -16,7 +16,7 @@ public class DefaultParts
     }
 
     private string cim =
-        "Cím: 1077 Budapest, Dob utca 75-81.\nE-mail: kavig@nav.gov.hu.\nLevelezési cím: 1410 Budapest, Pf.: 138.";{
+        "Nemzeti Adó- és Vámhivatal. \n Cím: 1077 Budapest, Dob utca 75-81. \n E-mail: kavig@nav.gov.hu. \n Levelezési cím: 1410 Budapest, Pf.: 138.";{
         get;
         set;
     }

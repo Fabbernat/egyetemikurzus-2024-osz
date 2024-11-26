@@ -1,13 +1,13 @@
 namespace URX5VP.IOHandler;
 
-public class Commands
+public class IO
 {
     private Dictionary<string, Action> commands = new()
         {
             {"exit", () => OnExit() },
             {"hello", () => OnHello()},
             {"write", () => {
-                Console.WriteLine("Add meg a generálandó email típusát! T - Adó[t]artozás, B - Adó[b]evallás C - [C]ancel");
+                Console.WriteLine("Add meg a generálandó email típusát! \n T - Adó[t]artozás, \n B - SZja-[b]evallás, \n Adó[v]isszatérítés, \n M - [m]égse");
                 var key = Console.ReadKey();
                 if (key == 'A')
                 {
@@ -16,9 +16,8 @@ public class Commands
                 {
                     // TODO
                 }
-                // maybe_unused
+                // [[maybe_unused]]
                 OnWriteType();
-                Console.WriteLine("Add meg a levélhez szükséges változókat!");
                 
             }
             }

@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using System;
+using System.Numerics;
 using System.Reflection;
 
 using DataGenerator;
@@ -18,7 +19,8 @@ public class Program
         Email templateEmail = InitializeEmail();
         DataGenerator dataGenerator = new DataGenerator();
         RecipientData data = dataGenerator.getData();
-        Email generatedEmail = emailGenerator.generateEmail(templateEmail, data);
+        DefaultParts defaultParts = new DefaultParts();
+        Email generatedEmail = emailGenerator.generateEmail(templateEmail, data, defaultParts);
         ISerializable iSer = new ISerializable();
         iSer.serializeemail(generatedEmail);
         with open("outputs/result.pdf" as res)
