@@ -11,8 +11,9 @@ using System.Text.Json;
 
 namespace URX5VP
 {
-    internal class EmailGenerator
+    public class EmailGenerator
     {
+        public EmailGenerator();
         public record UserData(string Nev, string Cim, string Osszeg, string Hatarido, string Kozlemeny);
 
         public string GenerateEmail(string texFilePath, string JSONDataFilePath)
