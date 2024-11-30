@@ -16,14 +16,15 @@ public class CsvLoader
 
                     // Parse Address
                     var cim = ParseAddress(parts[1].Trim('"'));
-
-                    return new AdosData(
-                        nev: parts[0],
-                        cim: cim,
-                        osszeg: decimal.Parse(parts[2], CultureInfo.InvariantCulture),
-                        hatarido: DateTime.Parse(parts[3]),
-                        kozlemeny: parts[4]
+                    
+                    var adosData = new AdosData(
+                        nev: "Minta Név",
+                        cim: new Address(6720, "Szeged", "Fő utca", "utca", 12, "-", "-", "-"),
+                        osszeg: 1000.50m,
+                        hatarido: DateTime.Now.AddDays(30),
+                        kozlemeny: "Fizetési felszólítás"
                     );
+                    return adosData;
                 })
                 .ToList();
         }
@@ -54,7 +55,8 @@ public class CsvLoader
             telepules: telepules,
             kozteruletNeve: kozteruletNeve,
             kozteruletJellege: kozteruletJellege,
-            hazszam: hazszam
+            hazszam: hazszam,
+            "-", "-", "-"
         );
     }
 }
