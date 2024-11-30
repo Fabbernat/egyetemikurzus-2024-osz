@@ -12,3 +12,4 @@ C:\RiderProjects\11.30.12.07\11.30.12.07\obj\Debug\net8.0\refint\11.30.12.07.dll
 C:\RiderProjects\11.30.12.07\11.30.12.07\obj\Debug\net8.0\11.30.12.07.pdb
 C:\RiderProjects\11.30.12.07\11.30.12.07\obj\Debug\net8.0\11.30.12.07.genruntimeconfig.cache
 C:\RiderProjects\11.30.12.07\11.30.12.07\obj\Debug\net8.0\ref\11.30.12.07.dll
+C:\RiderProjects\11.30.12.07\11.30.12.07\obj\Debug\net8.0\11.30.12.07.sourcelink.json

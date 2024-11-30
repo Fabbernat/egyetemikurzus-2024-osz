@@ -64,9 +64,9 @@ namespace NAVEmailApp
 
         static void GenerateEmailFile()
         {
-            string sourceFilePath = @"sample.tex"; // A feltöltött fájl elérési útja
+            string sourceFilePath = @"../../../tex/sample.tex"; // A feltöltött fájl elérési útja
             string outputDirectory = Path.Combine(Environment.CurrentDirectory, "OutputEmails");
-            string outputFilePath = Path.Combine(outputDirectory, "FizetesiFelszolitas.txt");
+            string outputFilePath = Path.Combine(outputDirectory, "FizetesiFelszolitas.tex");
 
             try
             {
