@@ -19,7 +19,12 @@ public class CsvLoader
                     
                     var adosData = new AdosData(
                         nev: "Minta Név",
-                        cim: new Address(6720, "Szeged", "Fő utca", "utca", 12, "-", "-", "-"),
+                        cim: new Address(6720, "Szeged", "Fő utca", "utca", 12, "-", "-", "-")
+                        {
+                            Telepules = null,
+                            KozteruletNeve = null,
+                            KozteruletJellege = null
+                        },
                         osszeg: 1000.50m,
                         hatarido: DateTime.Now.AddDays(30),
                         kozlemeny: "Fizetési felszólítás"
@@ -51,12 +56,17 @@ public class CsvLoader
         var hazszam = short.Parse(addressParts[^1].Trim('.')); // "10"
 
         return new Address(
-            iranyitoszam: iranyitoszam,
-            telepules: telepules,
-            kozteruletNeve: kozteruletNeve,
-            kozteruletJellege: kozteruletJellege,
-            hazszam: hazszam,
+            iranyitoszam,
+            telepules,
+            kozteruletNeve,
+            kozteruletJellege,
+            hazszam,
             "-", "-", "-"
-        );
+        )
+        {
+            Telepules = telepules,
+            KozteruletNeve = kozteruletNeve,
+            KozteruletJellege = kozteruletJellege
+        };
     }
 }
