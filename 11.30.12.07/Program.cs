@@ -1,13 +1,36 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using static NAVEmailApp.CsvLoader;
 
-namespace NAVEmailApp
-{
+namespace NAVEmailApp;
+
     class Program
     {
+            
         public static int Main(string[] args)
         {
+            
+            
+            string csvFilePath = Path.Combine("csv", "../../../../csv/database.csv");
+            List<AdosData>? data = LoadCsv(csvFilePath);
+            if (data == null || data.Count == 0)
+            {
+                Console.WriteLine(data);
+                Console.WriteLine("Nem sikerült betölteni az adatokat a CSV fájlból.");
+                return 1;
+            }
+            
+            Console.WriteLine("Adatok sikeresen betöltve:");
+            foreach (var item in data)
+            {
+                Console.WriteLine(item); // Assuming AdosData has a meaningful ToString override
+            }
+            
             Console.WriteLine("Üdvözöljük a NAV Automatikus Email Kibocsátó Alkalmazásban!");
             Console.WriteLine("Kérjük, válasszon az alábbi email sablonok közül:");
 
@@ -41,6 +64,11 @@ namespace NAVEmailApp
                 else if (choice == 1)
                 {
                     GenerateEmailFile();
+                    string adatok = "";
+                    for (int i = 0; i < data.Count; i++)
+                    {
+                    Console.WriteLine($"A(z) {i + 1}. email szövege: {EmailGenerator.GenerateEmail(data[i])}");
+                    }
                 }
                 else
                 {
@@ -95,4 +123,4 @@ namespace NAVEmailApp
             }
         }
     }
-}
+
