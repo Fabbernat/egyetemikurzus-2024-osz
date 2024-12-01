@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAVEmailApp", "NAVEmailApp\NAVEmailApp.csproj", "{CA60A801-63EF-4856-AC3B-74B8C54DF842}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tex", "tex", "{2EB343DE-27A0-4A51-B0EE-06CBA4B4907F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csv", "csv", "{44C5FECE-D372-4222-B378-E75DC7F46828}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mvcmodel", "mvcmodel", "{D7E96FB1-6607-4A29-9156-EDD3352D4A09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "models", "models", "{9054A337-5E66-409B-A31B-3D40D5CB8881}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "viewmodels", "viewmodels", "{5FC87F01-4B92-484A-8001-B8AA6BEAF9BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "views", "views", "{76B4C411-078A-458A-ACB4-9B1F28FACEBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "controllers", "controllers", "{4E1BBCE1-2C63-428A-B08E-246271ACBEE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA60A801-63EF-4856-AC3B-74B8C54DF842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA60A801-63EF-4856-AC3B-74B8C54DF842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA60A801-63EF-4856-AC3B-74B8C54DF842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA60A801-63EF-4856-AC3B-74B8C54DF842}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9054A337-5E66-409B-A31B-3D40D5CB8881} = {D7E96FB1-6607-4A29-9156-EDD3352D4A09}
+		{5FC87F01-4B92-484A-8001-B8AA6BEAF9BF} = {D7E96FB1-6607-4A29-9156-EDD3352D4A09}
+		{76B4C411-078A-458A-ACB4-9B1F28FACEBB} = {D7E96FB1-6607-4A29-9156-EDD3352D4A09}
+		{4E1BBCE1-2C63-428A-B08E-246271ACBEE7} = {D7E96FB1-6607-4A29-9156-EDD3352D4A09}
+	EndGlobalSection
+EndGlobal

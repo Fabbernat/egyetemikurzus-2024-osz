@@ -2,7 +2,8 @@
 <project version="4">
   <component name="UserContentModel">
     <attachedFolders>
-      <Path>11.30.12.07/bin/Debug/net8.0/OutputEmails</Path>
+      <Path>NAVEmailApp/bin/Debug/net8.0/OutputEmails</Path>
+      <Path>NAVEmailApp/utils</Path>
     </attachedFolders>
     <explicitIncludes />
     <explicitExcludes />

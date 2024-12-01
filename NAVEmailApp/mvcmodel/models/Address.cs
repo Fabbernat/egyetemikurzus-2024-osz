@@ -1,4 +1,4 @@
-﻿namespace NAVEmailApp;
+﻿namespace NAVEmailApp.mvcmodel;
 
 public class Address
 {
