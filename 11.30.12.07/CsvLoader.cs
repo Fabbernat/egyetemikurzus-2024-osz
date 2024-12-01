@@ -12,11 +12,6 @@ public class CsvLoader
             return lines.Skip(1) // Skip header
                 .Select(line =>
                 {
-                    var parts = line.Split(',');
-
-                    // Parse Address
-                    var cim = ParseAddress(parts[1].Trim('"'));
-                    
                     var adosData = new AdosData(
                         nev: "Minta Név",
                         cim: new Address(6720, "Szeged", "Fő utca", "utca", 12, "-", "-", "-")
