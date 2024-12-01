@@ -37,11 +37,12 @@ namespace NAVEmailApp;
             // Sablonok listája
             string[] templates = 
             {
-                "1. Fizetési felszólítás",
-                "2. Adóbevallási emlékeztető",
-                "3. Ellenőrzési értesítés",
-                "4. Tájékoztató az új szabályokról",
-                "5. Egyéni lekérdezés válasz"
+                "1. - Fizetési felszólítás",
+                "2. - Adóbevallási emlékeztető",
+                "3. - Ellenőrzési értesítés",
+                "4. - Tájékoztató az új szabályokról",
+                "5. - Egyéni lekérdezés válasz",
+                "6. - Mégse"
             };
 
             // Sablonok megjelenítése
@@ -50,14 +51,14 @@ namespace NAVEmailApp;
                 Console.WriteLine(template);
             }
 
-            Console.Write("\nAdja meg a választott sablon számát (1-5): ");
+            Console.Write("\nAdja meg a választott sablon számát (1-6): ");
 
             try
             {
                 // Felhasználói input
                 int choice = int.Parse(Console.ReadLine());
 
-                if (choice < 1 || choice > 5)
+                if (choice < 1 || choice > 6)
                 {
                     Console.WriteLine("Hiba: Érvénytelen választás! Kérjük, próbálja újra.");
                 }
@@ -70,7 +71,10 @@ namespace NAVEmailApp;
                     Console.WriteLine($"A(z) {i + 1}. email szövege: {EmailGenerator.GenerateEmail(data[i])}");
                     }
                 }
-                else
+                else if (choice == 6)
+                {
+                    return 0;
+                }
                 {
                     Console.WriteLine("A választott sablon jelenleg nem támogatott.");
                 }
