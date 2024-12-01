@@ -1,5 +1,3 @@
-using System;
-
 namespace NAVEmailApp.mvcmodel;
 
 public record Email
@@ -7,9 +5,7 @@ public record Email
     public Email(string Sender, string[] Recipients, string Subject, DateTime Date, string Message)
     {
         if (Recipients.Length > 2000)
-        {
             throw new ArgumentException("A single email can only have up to 2,000 recipients");
-        }
         this.Sender = Sender;
         this.Recipients = Recipients;
         this.Subject = Subject;

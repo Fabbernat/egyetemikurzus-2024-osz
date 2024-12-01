@@ -2,17 +2,9 @@
 
 public class Address
 {
-    public int Iranyitoszam { get; set; }
-    public required string? Telepules { get; set; }
-    public required string? KozteruletNeve { get; set; }
-    public required string? KozteruletJellege { get; set; }
-    public int Hazszam { get; set; }
-
-    public string? Reszleg { get; set; }
-    public string? Emelet { get; set; }
-    public string? Ajto { get; set; }
-
-    public Address() { }
+    public Address()
+    {
+    }
 
     public Address(int iranyitoszam, string? telepules, string? kozteruletNeve, string? kozteruletJellege, int hazszam)
     {
@@ -35,4 +27,14 @@ public class Address
         Emelet = emelet;
         Ajto = ajto;
     }
+
+    public int Iranyitoszam { get; set; }
+    public required string? Telepules { get; set; }
+    public required string? KozteruletNeve { get; set; }
+    public required string? KozteruletJellege { get; set; }
+    public int Hazszam { get; set; }
+
+    public string? Reszleg { get; set; }
+    public string? Emelet { get; set; }
+    public string? Ajto { get; set; }
 }
