@@ -7,12 +7,12 @@ public class QueryService
 {
     public IEnumerable<string> ProcessQuery(string userInput)
     {
-        // Itt statikus adatokat használunk; valós implementációban adatbázisból olvasnánk.
+        // Itt statikus adatokat használunk; // TODO add csv here
         var sampleData = new Dictionary<string, string>
         {
-            { "1234", "Adós: Tóth Béla, Hátralék: 5000 HUF" },
-            { "5678", "Adós: Kovács Anna, Hátralék: 12000 HUF" },
-            { "9101", "Adós: Nagy Péter, Hátralék: 3000 HUF" }
+            { "1", "Adós: Tóth Béla, Hátralék: 5000 HUF" },
+            { "2", "Adós: Kovács Anna, Hátralék: 12000 HUF" },
+            { "3", "Adós: Nagy Péter, Hátralék: 3000 HUF" }
         };
 
         if (sampleData.ContainsKey(userInput))

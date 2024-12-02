@@ -1,5 +1,6 @@
 ﻿# Példa használat:
 
+```
 console:
 Üdvözöljük a NAV Automatikus Email Kibocsátó Alkalmazásban!
 Kérjük, válasszon az alábbi email sablonok közül:
@@ -28,3 +29,4 @@ Lekérdezési eredmények:
 Nyomjon meg egy billentyűt a kilépéshez...
 
 user:q
+```
