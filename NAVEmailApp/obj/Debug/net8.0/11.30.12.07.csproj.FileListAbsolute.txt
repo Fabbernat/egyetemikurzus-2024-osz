@@ -1,0 +1,15 @@
+C:\RiderProjects\NAVEmailApp\NAVEmailApp\bin\Debug\net8.0\NAVEmailApp.exe
+C:\RiderProjects\NAVEmailApp\NAVEmailApp\bin\Debug\net8.0\NAVEmailApp.deps.json
+C:\RiderProjects\NAVEmailApp\NAVEmailApp\bin\Debug\net8.0\NAVEmailApp.runtimeconfig.json
+C:\RiderProjects\NAVEmailApp\NAVEmailApp\bin\Debug\net8.0\NAVEmailApp.dll
+C:\RiderProjects\NAVEmailApp\NAVEmailApp\bin\Debug\net8.0\NAVEmailApp.pdb
+C:\RiderProjects\NAVEmailApp\NAVEmailApp\obj\Debug\net8.0\NAVEmailApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\RiderProjects\NAVEmailApp\NAVEmailApp\obj\Debug\net8.0\NAVEmailApp.AssemblyInfoInputs.cache
+C:\RiderProjects\NAVEmailApp\NAVEmailApp\obj\Debug\net8.0\NAVEmailApp.AssemblyInfo.cs
+C:\RiderProjects\NAVEmailApp\NAVEmailApp\obj\Debug\net8.0\NAVEmailApp.csproj.CoreCompileInputs.cache
+C:\RiderProjects\NAVEmailApp\NAVEmailApp\obj\Debug\net8.0\NAVEmailApp.dll
+C:\RiderProjects\NAVEmailApp\NAVEmailApp\obj\Debug\net8.0\refint\NAVEmailApp.dll
+C:\RiderProjects\NAVEmailApp\NAVEmailApp\obj\Debug\net8.0\NAVEmailApp.pdb
+C:\RiderProjects\NAVEmailApp\NAVEmailApp\obj\Debug\net8.0\NAVEmailApp.genruntimeconfig.cache
+C:\RiderProjects\NAVEmailApp\NAVEmailApp\obj\Debug\net8.0\ref\NAVEmailApp.dll
+C:\RiderProjects\NAVEmailApp\NAVEmailApp\obj\Debug\net8.0\NAVEmailApp.sourcelink.json
