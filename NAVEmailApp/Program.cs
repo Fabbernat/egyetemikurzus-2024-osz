@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
+﻿// Program.cs
 using NAVEmailApp.utils.function2;
 using NAVEmailApp.utils.function3;
 using NAVEmailApp.utils.function4;
@@ -13,27 +12,12 @@ internal class Program
     public static int Main(string[] args)
     {
         Console.WriteLine("Üdvözöljük a NAV Automatikus Email Kibocsátó Alkalmazásban!");
-        Console.WriteLine("Kérjük, válasszon az alábbi műveletek közül:");
-
-        // Sablonok listája
-        string[] templates =
-        {
-            "0. - Mégse",
-            "1. - Fizetési felszólítás",
-            "2. - Tájékoztató az új szabályokról",
-            "3. - Ellenőrzési értesítés",
-            "4. - Adóbevallási emlékeztető",
-            "5. - Egyéni lekérdezés válasz, megadott id alapján"
-        };
-
-        // Sablonok megjelenítése
-        foreach (var template in templates) Console.WriteLine(template);
-
-        Console.Write($"\nAdja meg a választott művelet számát (1-6):");
 
         string input = "";
         do
         {
+            DisplayMenu(); // Display the menu options
+
             try
             {
                 // Felhasználói input
@@ -80,8 +64,7 @@ internal class Program
                         queryView.DisplayQueryResults();
                         break;
                     default:
-                        Console.Write($"\nAdja meg a választott művelet számát (1-6):");
-                        continue;
+                        continue; // Continue to the next iteration of the loop
                 }
             }
             catch (FormatException)
@@ -92,10 +75,34 @@ internal class Program
             {
                 Console.WriteLine($"Ismeretlen hiba történt: {ex.Message}");
             }
+
+            Console.WriteLine("\nNyomjon meg egy billentyűt a folytatáshoz vagy 0-t a kilépéshez...");
+            input = Console.ReadKey().KeyChar.ToString();
+
         } while (input != "0");
 
-        Console.WriteLine("\nNyomjon meg egy billentyűt a kilépéshez...");
-        Console.ReadKey();
+        Console.WriteLine("\nViszlát!");
         return 0;
+    }
+
+    private static void DisplayMenu()
+    {
+        Console.WriteLine("\nKérjük, válasszon az alábbi műveletek közül:");
+
+        // Sablonok listája
+        string[] templates =
+        {
+            "0. - Mégse",
+            "1. - Fizetési felszólítás",
+            "2. - Tájékoztató az új szabályokról",
+            "3. - Ellenőrzési értesítés",
+            "4. - Adóbevallási emlékeztető",
+            "5. - Egyéni lekérdezés válasz, megadott id alapján"
+        };
+
+        // Sablonok megjelenítése
+        foreach (var template in templates) Console.WriteLine(template);
+
+        Console.Write($"\nAdja meg a választott művelet számát (0-5): ");
     }
 }
