@@ -15,6 +15,7 @@ public class QueryView
     {
         Console.WriteLine("\nKérjük, adja meg az adós azonosítóját:");
         var userInput = Console.ReadLine();
+        
 
         Console.WriteLine("\nLekérdezési eredmények:");
         foreach (var result in _queryService.ProcessQuery(userInput))
