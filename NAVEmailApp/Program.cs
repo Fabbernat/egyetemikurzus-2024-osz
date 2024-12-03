@@ -29,7 +29,7 @@ internal class Program
         // Sablonok megjelenítése
         foreach (var template in templates) Console.WriteLine(template);
 
-        Console.Write($"\nAdja meg a választott művelet számát (1-6):"); // TODO toString
+        Console.Write($"\nAdja meg a választott művelet számát (1-6):");
 
         string input = "";
         do
@@ -80,6 +80,7 @@ internal class Program
                         queryView.DisplayQueryResults();
                         break;
                     default:
+                        Console.Write($"\nAdja meg a választott művelet számát (1-6):");
                         continue;
                 }
             }

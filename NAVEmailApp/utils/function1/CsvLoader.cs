@@ -70,12 +70,7 @@ public class CsvLoader
             var hazszam = short.Parse(addressParts[^1].Trim('.')); // "10"
 
             return new Address(
-                iranyitoszam,
-                telepules,
-                kozteruletNeve,
-                kozteruletJellege,
-                hazszam,
-                "-", "-", "-"
+                cimString
             )
             {
                 Iranyitoszam = int.MinValue,
@@ -87,7 +82,7 @@ public class CsvLoader
         catch (Exception ex)
         {
             Console.WriteLine($"Hiba a cím feldolgozása közben: {ex.Message}");
-            return new Address
+            return new Address(cimString)
             {
                 Iranyitoszam = int.MinValue,
                 Telepules = "ismeretlen",

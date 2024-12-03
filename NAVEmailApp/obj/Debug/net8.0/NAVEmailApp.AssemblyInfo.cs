@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NAVEmailApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8aba38f931f6c00b1cd1433164b908e6263139d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba576676e5f1c1eaef0f90cb4d89774db7db759b")]
 [assembly: System.Reflection.AssemblyProductAttribute("NAVEmailApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NAVEmailApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
