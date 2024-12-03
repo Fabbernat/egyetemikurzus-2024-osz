@@ -8,4 +8,10 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="mvcmodel\controllers\" />
+      <Folder Include="mvcmodel\viewmodels\" />
+      <Folder Include="mvcmodel\views\" />
+    </ItemGroup>
+
 </Project>
