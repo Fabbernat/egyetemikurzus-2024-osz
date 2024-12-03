@@ -7,7 +7,7 @@ public class QueryService
 {
     public IEnumerable<string> ProcessQuery(string userInput)
     {
-        // Itt statikus adatokat használunk; // TODO add csv here
+        // Itt statikus adatokat használunk, TODO adatok csv-bol
         var sampleData = new Dictionary<string, string>
         {
             { "1", "Adós: Tóth Béla, Hátralék: 5000 HUF" },
