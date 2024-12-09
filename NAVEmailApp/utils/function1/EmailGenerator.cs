@@ -9,7 +9,7 @@ public class EmailGenerator
     {
         try
         {
-            var csvFilePath = Path.Combine("csv", "../../../../csv/database.csv");
+            var csvFilePath = Path.Combine("csv", "../../../../csv/personaldata.csv");
             List<AdosData?> data = CsvLoader.LoadCsv(csvFilePath);
             if (data == null || data.Count == 0)
             {
@@ -29,7 +29,7 @@ public class EmailGenerator
         return 2;
     }
     
-    public static string GenerateMarkdownEmailFile(AdosData? data = null, string to = "", string cc = "", string bcc = "", string subject = "NAV ügyfélmegkeresés")
+    public static void GenerateMarkdownEmailFile(AdosData? data = null, string to = "", string cc = "", string bcc = "", string subject = "NAV ügyfélmegkeresés")
     {
         string currentDate = DateTime.Now.ToString("yyyy-MM-dd");
 
@@ -57,7 +57,35 @@ public class EmailGenerator
         sb.AppendLine("Üdvözlettel,");
         sb.AppendLine("**NAV**");
 
-        return sb.ToString();
+        string emailContent = sb.ToString();
+    
+        var outputDirectory = Path.Combine(Environment.CurrentDirectory, "OutputMarkdownEmails");
+        var outputFilePath = Path.Combine(outputDirectory, "FizetesiFelszolitas.md");
+
+        try
+        {
+            if (!Directory.Exists(outputDirectory))
+            {
+                Directory.CreateDirectory(outputDirectory);
+            }
+
+            // Markdown tartalom írása a fájlba
+            File.WriteAllText(outputFilePath, emailContent);
+
+            Console.WriteLine($"Az email sikeresen generálva. Elérési út: {outputFilePath}");
+        }
+        catch (FileNotFoundException)
+        {
+            Console.WriteLine("Hiba: A fájl nem található.");
+        }
+        catch (UnauthorizedAccessException)
+        {
+            Console.WriteLine("Hiba: Nincs engedély a fájl írására.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Ismeretlen hiba történt a fájl generálása közben: {ex.Message}");
+        }
     }
 
     public static void GenerateTeXEmailFile()
