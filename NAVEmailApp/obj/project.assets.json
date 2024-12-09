@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\RiderProjects\\NAVEmailApp\\NAVEmailApp\\NAVEmailApp.csproj",
+      "projectUniqueName": "C:\\Users\\Bernát\\RiderProjects\\egyetemikurzus-2024-osz2\\NAVEmailApp\\NAVEmailApp.csproj",
       "projectName": "NAVEmailApp",
-      "projectPath": "C:\\RiderProjects\\NAVEmailApp\\NAVEmailApp\\NAVEmailApp.csproj",
+      "projectPath": "C:\\Users\\Bernát\\RiderProjects\\egyetemikurzus-2024-osz2\\NAVEmailApp\\NAVEmailApp.csproj",
       "packagesPath": "C:\\Users\\Bernát\\.nuget\\packages\\",
-      "outputPath": "C:\\RiderProjects\\NAVEmailApp\\NAVEmailApp\\obj\\",
+      "outputPath": "C:\\Users\\Bernát\\RiderProjects\\egyetemikurzus-2024-osz2\\NAVEmailApp\\obj\\",
       "projectStyle": "PackageReference",
       "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [

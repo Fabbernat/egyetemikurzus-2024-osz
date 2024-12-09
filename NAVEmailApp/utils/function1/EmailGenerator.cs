@@ -1,27 +1,10 @@
-﻿namespace NAVEmailApp;
+﻿using System.Globalization;
+using System.Text;
+
+namespace NAVEmailApp;
 
 public class EmailGenerator
 {
-    public static string GenerateEmail(AdosData data)
-    {
-        return $@"
-Tárgy: Fizetési felszólítás - Adótartozás
-
-Kedves {data.Nev},
-
-A következő adótartozás került rögzítésre az Ön nevéhez:
-
-Összeg: {data.Osszeg:C}
-Határidő: {data.Hatarido:yyyy. MMMM dd.}
-Közlemény: {data.Kozlemeny}
-
-Kérjük, haladéktalanul intézkedjen a tartozás rendezéséről. Amennyiben már rendezte a tartozását, kérjük, tekintse ezt az üzenetet tárgytalannak.
-
-Üdvözlettel,
-NAV
-";
-    }
-
     public static int PrepareEmailGeneration()
     {
         try
@@ -45,8 +28,39 @@ NAV
 
         return 2;
     }
+    
+    public static string GenerateMarkdownEmailFile(AdosData? data = null, string to = "", string cc = "", string bcc = "", string subject = "NAV ügyfélmegkeresés")
+    {
+        string currentDate = DateTime.Now.ToString("yyyy-MM-dd");
 
-    public static void GenerateEmailFile()
+        var sb = new StringBuilder();
+        sb.AppendLine($"**To:** {to}");
+        sb.AppendLine($"**Cc:** {cc}");
+        sb.AppendLine($"**Bcc:** {bcc}");
+        sb.AppendLine($"**Subject:** {subject}");
+        sb.AppendLine($"**Date:** {currentDate}");
+        sb.AppendLine();
+        sb.AppendLine($"**Tisztelt {data?.Nev},**");
+        sb.AppendLine();
+        sb.AppendLine($"A következő adótartozás került rögzítésre az Ön nevéhez:");
+        sb.AppendLine();
+        if (data != null)
+        {
+            sb.AppendLine($"- **Összeg:** {data.Osszeg:C}");
+            sb.AppendLine($"- **Határidő:** {data.Hatarido:yyyy. MMMM dd.}");
+            sb.AppendLine($"- **Közlemény:** {data.Kozlemeny}");
+        }
+
+        sb.AppendLine();
+        sb.AppendLine("Kérjük, haladéktalanul intézkedjen a tartozás rendezéséről. Amennyiben már rendezte a tartozását, kérjük, tekintse ezt az üzenetet tárgytalannak.");
+        sb.AppendLine();
+        sb.AppendLine("Üdvözlettel,");
+        sb.AppendLine("**NAV**");
+
+        return sb.ToString();
+    }
+
+    public static void GenerateTeXEmailFile()
     {
         var sourceFilePath = @"../../../tex/sample.tex"; // A feltöltött fájl elérési útja
         var outputDirectory = Path.Combine(Environment.CurrentDirectory, "OutputEmails");

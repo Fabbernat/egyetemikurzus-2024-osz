@@ -8,20 +8,21 @@ using static NAVEmailApp.EmailGenerator;
 namespace NAVEmailApp;
 
 internal class Program
+
 {
     public static int Main(string[] args)
     {
         Console.WriteLine("Üdvözöljük a NAV Automatikus Email Kibocsátó Alkalmazásban!");
 
-        string input = "";
+        string input;
         do
         {
-            DisplayMenu(); // Display the menu options
+            DisplayMenu(); // Displays the menu options
 
             try
             {
                 // Felhasználói input
-                input = (Console.ReadLine() ?? string.Empty);
+                input = Console.ReadLine() ?? string.Empty;
                 int choice = int.Parse(input);
                 switch (choice)
                 {
@@ -34,7 +35,8 @@ internal class Program
                         int retval = PrepareEmailGeneration();
                         if (retval == 0)
                         {
-                            GenerateEmailFile();
+                            GenerateMarkdownEmailFile();
+                            GenerateTeXEmailFile();
                         }
                         else
                         {
@@ -103,6 +105,6 @@ internal class Program
         // Sablonok megjelenítése
         foreach (var template in templates) Console.WriteLine(template);
 
-        Console.Write($"\nAdja meg a választott művelet számát (0-5): ");
+        Console.Write("\nAdja meg a választott művelet számát (0-5): ");
     }
 }
