@@ -1,5 +1,4 @@
-#  URX5VP - NAVEmailApp - Levél generáló és adatlekérdező alkalmazás NAV dolgozóknak #29 
-
+FIGYELEM!!! A működő projektem a https://github.com/Fabbernat/egyetemikurzus-2024-osz repo `main` branch-ében található, de nem tudtam pull requestelni a konfliktusok miatt! Elnézést az okozott kellemetlenségekért!
 https://github.com/CsharptutorialHungary/egyetemikurzus-2024-osz/issues/7#issue-2632545054
 # Funkciók:
 ## Implementáltam az alábbi 5 funkciót (1-5. menüpont):
